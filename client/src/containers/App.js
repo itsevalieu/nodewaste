@@ -7,6 +7,7 @@ import './App.css';
 import Map from './components/Map';
 import SignUp from "./components/signup";
 import Login from './components/login';
+import CameraCustom from './components/camera';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
           <Route exact path='/map' component={ Map } />
           <Route exact path='/signup' component={ SignUp } />
           <Route exact path='/login' component={ Login } />
+          <Route exact path='/camera-custom' component={ CameraCustom } />
         </div>
       </Router>
     );
