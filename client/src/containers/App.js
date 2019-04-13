@@ -6,6 +6,7 @@ import {
 import './App.css';
 import Map from './components/Map';
 import SignUp from "./components/signup";
+import Login from './components/login';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         <div className="App">
           <Route exact path='/' component={ Map } />
           <Route exact path='/signup' component={ SignUp } />
+          <Route exact path='/login' component={ Login } />
         </div>
       </Router>
     );
