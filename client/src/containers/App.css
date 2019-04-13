@@ -1,4 +1,6 @@
 .app {
+    max-height: 100%;
+    border: 1px solid red;
 }
 .map {
     border: 1px solid #ccc;
