@@ -1,11 +1,5 @@
 .app {
     max-height: 100%;
-    border: 1px solid red;
-}
-.map {
-    border: 1px solid #ccc;
-    height: 80%;
-    width: 100%;  
 }
 /** MEDIA QUERIES **/
 @media (max-width: 768px) {
