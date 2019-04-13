@@ -1,10 +1,11 @@
 import React from "react";
-import { compose, withProps } from "recompose";
+import { compose, withProps, withStateHandlers } from "recompose";
 import {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
   Marker, 
+  InfoWindow,
 } from "react-google-maps";
 import './MyGoogleMap.css'
 
@@ -110,12 +111,14 @@ const campaigns = [{
 }];
 
 const MyGoogleMap = compose(
+  withStateHandlers(() => ({
+    isOpen: false,
+  }), {
+    onToggleOpen: ({ isOpen }) => () => ({
+      isOpen: !isOpen,
+    })
+  }),
   withProps({
-    /**
-     * Note: create and replace your own key in the Google console.
-     * https://console.developers.google.com/apis/dashboard
-     * The key AIzaSyBkNaAGLEVq0YLQMi-PYEMabFeREadYe1Q" can be ONLY used in this sandbox (no forked).
-     */
     googleMapURL:
       "https://maps.googleapis.com/maps/api/js?key=AIzaSyDJMqSSgQ9npfcAZ9hmcOJynEbB6h1BOEc&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
@@ -125,10 +128,11 @@ const MyGoogleMap = compose(
   withScriptjs,
   withGoogleMap
 )(props => (
-  <GoogleMap className='googlemap' defaultZoom={12} defaultCenter={{ lat: 34.020130, lng: -118.484962 }}>
+  <GoogleMap className='googlemap' defaultZoom={13} defaultCenter={{ lat: 34.020130, lng: -118.484962 }}>
       {campaigns.map((campaign) => (
-        // console.log(campaign)
-        <Marker position={ {lat: campaign.lat, lng: campaign.long} } />
+        <Marker position={ {lat: campaign.lat, lng: campaign.long} } onClick={props.onToggleOpen}>
+          {props.isOpen && <InfoWindow onCloseClick={props.onToggleOpen}></InfoWindow>}  
+        </Marker>
       ))}
   </GoogleMap>
 ));
