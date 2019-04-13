@@ -5,8 +5,7 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import Map from './components/Map';
-import Login from './components/Login';
-import Register from './components/Register';
+import SignUp from "./components/signup";
 
 class App extends Component {
   render() {
@@ -14,8 +13,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <Route exact path='/' component={ Map } />
-          <Route exact path='/login' component={ Login } />
-			    <Route exact path='/register' component={ Register } />
+          <Route exact path='/signup' component={ SignUp } />
         </div>
       </Router>
     );
