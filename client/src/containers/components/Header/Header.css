@@ -21,9 +21,14 @@ header {
 ul {
     display: flex;
     flex-direction: row;
+    list-style: none;
 }
 li {
     margin: 1em;
+}
+a {
+    color: #fff;
+    text-decoration: none;
 }
 .menu, .option {
     display: none;
