@@ -4,16 +4,18 @@ import {
   Route
 } from 'react-router-dom';
 import './App.css';
-import Map from './components/Map';
-import SignUp from "./components/signup";
-import Login from './components/login';
-import CameraCustom from './components/camera';
+import Header from './components/Header/Header';
+import Map from './components/Map/Map';
+import SignUp from "./components/Signup/signup";
+import Login from './components/Login/login';
+import CameraCustom from './components/Camera/camera';
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
+        <div className="app">
+          <Header/>
           <Route exact path='/map' component={ Map } />
           <Route exact path='/signup' component={ SignUp } />
           <Route exact path='/login' component={ Login } />

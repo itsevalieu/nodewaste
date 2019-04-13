@@ -5,7 +5,7 @@ function onTakePhoto(dataUri) {
   console.log('takePhoto');
 }
 const cameraElement = (
-  <div className="App">
+  <div>
     <Camera
       onTakePhoto = { (dataUri) => { onTakePhoto(dataUri); } }
     />

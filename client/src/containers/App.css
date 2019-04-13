@@ -1,5 +1,17 @@
+.app {
+}
 .map {
     border: 1px solid #ccc;
-    height: 100%;
+    height: 80%;
     width: 100%;  
+}
+/** MEDIA QUERIES **/
+@media (max-width: 768px) {
+
+  
+}
+
+/** MOBILE STYLES **/
+@media only screen and (max-device-width: 768px) {
+  
 }
