@@ -9,9 +9,9 @@ class Map extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      lng: 5,
-      lat: 34,
-      zoom: 1.5
+      lng: -118.4912,
+      lat: 34.0195,
+      zoom: 12
     };
   }
 
