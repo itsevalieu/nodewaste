@@ -23,20 +23,22 @@ class Header extends Component {
   render() {
     return (
         <header>
-          <div className='menu'>
+          {/* <div className='menu'>
             <img src={ hamburger } alt='menu' onClick={ this._openMenu }/>
-          </div>
-          <span className='logo'>
+          </div> */}
+          {/* <span className='logo'>
             <a href='/'>NODEWASTE</a>
-          </span>
-          <div className='option'>
+          </span> */}
+          {/* <div className='option'>
             <img src={ option } alt='option' />
-          </div>
+          </div> */}
           <nav className='navlinks' id='nav'>
             <ul>
-              <li><a href='/login'>Login</a></li>
-              <li><a href='/signup'>Sign up</a></li>
-              <li><a href='/map'>Map</a></li>
+              <li><a href='/'><img src='' alt='home'/>Home</a></li>
+              <li><a href='/notifications'><img src='' alt='notifications'/>Notifications</a></li>
+              <li><a href='/me'><img src='' alt='me'/>Me</a></li>
+              <li><a href='/education'><img src='' alt='education'/>Education</a></li>
+              <li><a href='/settings'><img src='' alt='settings'/>Settings</a></li>
             </ul>
           </nav>
         </header>

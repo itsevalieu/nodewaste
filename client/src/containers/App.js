@@ -3,9 +3,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Map from "./components/Map/Map";
-import MyGoogleMap from "./components/Map/MyGoogleMap";
-import SignUp from "./components/Signup/signup";
-import Login from "./components/Login/login";
 import CameraCustom from "./components/Camera/camera";
 import Options from "./components/Home/Options";
 import Searchbar from "./components/Home/SearchBar";
@@ -22,9 +19,6 @@ class App extends Component {
           <Route exact path="/" component={CampaignButton} />
           <Route exact path="/map" component={Map} />
           <Route exact path="/campaign" component={CampaignList} />
-          <Route exact path="/googlemap" component={MyGoogleMap} />
-          <Route exact path="/signup" component={SignUp} />
-          <Route exact path="/login" component={Login} />
           <Route exact path="/camera-custom" component={CameraCustom} />
           <Header />
         </div>
