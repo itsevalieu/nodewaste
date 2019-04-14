@@ -137,7 +137,7 @@ class MyGoogleMap extends Component {
   // }
 
   render() {
-    const { query, locations } = this.state
+    const { locations } = this.state;
 
     // let filteredMarkers
     // if(query) {

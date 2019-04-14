@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {  GoogleMap, Marker, withGoogleMap, withScriptjs, InfoWindow } from 'react-google-maps';
 import './Map.css';
+import CampaignItem from '../Campaign/CampaignItem';
 
 class Map extends Component {
   state = {
@@ -16,6 +17,15 @@ class Map extends Component {
       <GoogleMap
         defaultZoom={13}
         defaultCenter={{ lat: 34.020130, lng: -118.484962 }}
+        defaultOptions={{
+          streetViewControl: false,
+          scaleControl: false,
+          mapTypeControl: false,
+          panControl: false,
+          zoomControl: false,
+          rotateControl: false,
+          fullscreenControl: false
+        }}
       >{this.props.markers.map((marker, index) =>(
         <Marker
           key={index}
@@ -23,9 +33,7 @@ class Map extends Component {
           onClick={() => this.props.onToggle(marker)}
          >{marker.isOpen && <InfoWindow onCloseClick={()=>this.props.onToggle(marker)}>
             <div className='infowindow'>
-              <p>{marker.name}</p>
-              <p>{marker.address}</p>
-              <p>{marker.dist}</p>
+              <CampaignItem location={marker}/>
               <a href={marker.link}><button>Take Me There</button></a>
             </div>
             </InfoWindow>}
