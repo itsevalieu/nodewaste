@@ -7,7 +7,7 @@ class Education extends Component {
     return (
         <div class='scanqr'>
             <img src={scanQR} alt='scancode'/>
-            <p>Line up the container QR code to scan it with your device's camera.</p>
+            <p>0xa0714082bff2DEEa32bD4FFd642d464Daa297232</p>
         </div>
     );
   }
