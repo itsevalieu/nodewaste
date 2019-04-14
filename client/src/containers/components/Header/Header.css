@@ -36,11 +36,12 @@ header {
 .navigation__link {
     color: #222;
     text-decoration: none;
-    font-size: 1.4em;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 .menu, .option {
     display: none;

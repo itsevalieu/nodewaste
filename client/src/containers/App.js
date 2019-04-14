@@ -25,7 +25,7 @@ class App extends Component {
           <Route exact path="/" component={Searchbar} />
           <Route exact path="/" component={Options} />
 
-          <Route exact path="/me" component={Me} />
+          <Route exact path="/profile" component={Me} />
           <Route exact path="/notifications" component={Notifications} />
           <Route exact path="/education" component={Education} />
           <Route exact path="/settings" component={Settings} />

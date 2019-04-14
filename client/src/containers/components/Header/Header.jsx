@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 import './Header.css';
 import hamburger from './hamburger.png';
 import option from './option.png';
+import { ReactComponent as HomeGrey } from './icons/home-grey.svg';
+import { ReactComponent as HomeBlue } from './icons/home-color.svg';
+import { ReactComponent as ProfileGrey } from './icons/my-campaign-grey.svg';
+import { ReactComponent as ProfileColor } from './icons/my-campaign-color.svg';
+import { ReactComponent as NotificationGrey } from './icons/notification-grey.svg';
+import { ReactComponent as NotificationColor } from './icons/notification-color.svg';
+import { ReactComponent as SettingGrey } from './icons/setting-grey.svg';
+import { ReactComponent as SettingColor } from './icons/setting-color.svg';
+import { ReactComponent as EducationGrey } from './icons/info-grey.svg';
+import { ReactComponent as EducationColor } from './icons/info-color.svg';
 
 class Header extends Component {
   constructor() {
@@ -34,11 +44,11 @@ class Header extends Component {
           </div> */}
           <nav className='navigation' id='navigation'>
             <ul className='navigation__list'>
-              <li className='navigation__item'><a href='/' className='navigation__link'><img src='' alt='home' className='navigation__icon'/>Home</a></li>
-              <li className='navigation__item'><a href='/notifications' className='navigation__link'><img src='' alt='notifications' className='navigation__icon'/>Notifications</a></li>
-              <li className='navigation__item'><a href='/me' className='navigation__link'><img src='' alt='me' className='navigation__icon'/>Me</a></li>
-              <li className='navigation__item'><a href='/education' className='navigation__link'><img src='' alt='education' className='navigation__icon'/>Education</a></li>
-              <li className='navigation__item'><a href='/settings' className='navigation__link'><img src='' alt='settings' className='navigation__icon'/>Settings</a></li>
+              <li className='navigation__item'><a href='/' className='navigation__link'><HomeGrey/></a></li>
+              <li className='navigation__item'><a href='/notifications' className='navigation__link'><NotificationGrey /></a></li>
+              <li className='navigation__item'><a href='/profile' className='navigation__link'><ProfileGrey /></a></li>
+              <li className='navigation__item'><a href='/education' className='navigation__link'><EducationGrey /></a></li>
+              <li className='navigation__item'><a href='/settings' className='navigation__link'><SettingGrey /></a></li>
             </ul>
           </nav>
         </header>
