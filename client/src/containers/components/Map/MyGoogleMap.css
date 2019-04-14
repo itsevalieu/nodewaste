@@ -1,5 +1,9 @@
 .map {
-    height: 100%;
+    height: 110%;
+    /* scroll-snap-type: y mandatory;
+    scroll-padding: 100px;
+    scroll-snap-align: center; */
+    /* overflow: hidden; */
 }
 .gm-style {
     border: 1px solid blue;
@@ -8,6 +12,6 @@
     top: 100px;
     height: 250px;
 }
-.gm-style::after {
+.gm-style:after {
     content: none;
 }

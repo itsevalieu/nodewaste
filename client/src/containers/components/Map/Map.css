@@ -1,5 +1,4 @@
 .infowindow {
-    display: flex;
-    flex-direction: column;
-    
+    position: absolute;
+    padding: 1em;
 }

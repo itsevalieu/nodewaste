@@ -21,10 +21,11 @@ class Map extends Component {
           streetViewControl: false,
           scaleControl: false,
           mapTypeControl: false,
-          panControl: false,
+          panControl: true,
           zoomControl: false,
           rotateControl: false,
-          fullscreenControl: false
+          fullscreenControl: false,
+          scrollwheel: false
         }}
       >{this.props.markers.map((marker, index) =>(
         <Marker
