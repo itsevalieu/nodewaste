@@ -9,6 +9,7 @@ import Login from "./components/Login/login";
 import CameraCustom from "./components/Camera/camera";
 import Options from "./components/Home/Options";
 import Searchbar from "./components/Home/SearchBar";
+import CampaignButton from "./components/Home/CampaignButton";
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
           <Header />
           <Route exact path="/" component={Searchbar} />
           <Route exact path="/" component={Options} />
+          <Route exact path="/" component={CampaignButton} />
           <Route exact path="/map" component={Map} />
           <Route exact path="/googlemap" component={MyGoogleMap} />
           <Route exact path="/signup" component={SignUp} />
