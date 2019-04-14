@@ -1,0 +1,12 @@
+.flex1 .flex2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+img {
+  padding: 1px;
+  width: 25%;
+  height: auto;
+  color: #444;
+}
