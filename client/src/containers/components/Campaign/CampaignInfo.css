@@ -1,0 +1,23 @@
+.campaign__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -30px;
+}
+.direction, .scan {
+    border-radius: 50px;
+    color: #fff;
+    font-size: 2.2em;
+    width: 300px;
+    height: 60px;
+    border: none;
+    font-weight: 600;
+}
+.direction {
+    background: rgb(130, 240, 152);
+}
+.scan {
+    background: #00bdff;
+}

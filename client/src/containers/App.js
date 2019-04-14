@@ -10,6 +10,7 @@ import Education from "./components/Education/Education";
 import Settings from "./components/Settings/Settings";
 import Campaign from "./components/Campaign/Campaign";
 
+import CampaignInfo from "./components/Campaign/CampaignInfo";
 import CameraCustom from "./components/Camera/camera";
 import Options from "./components/Home/Options";
 import Searchbar from "./components/Home/SearchBar";
@@ -33,6 +34,7 @@ class App extends Component {
           <Route exact path="/settings" component={Settings} />
           <Route exact path="/campaign" component={Campaign} />
 
+          <Route exact path="/example" component={CampaignInfo} />
           <Route exact path="/camera-custom" component={CameraCustom} />
           <Header />
         </div>
