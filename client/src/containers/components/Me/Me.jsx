@@ -98,31 +98,31 @@ class Me extends Component {
                 <p className='badge__type'>PAPER</p>
               </div>
               <div className='badge'>
-                <div className='badge__points two'>3</div>
+                <div className='badge__points two'>12</div>
                 <p className='badge__type'>PLASTIC</p>
               </div>
               <div className='badge'>
-                <div className='badge__points three'>3</div>
+                <div className='badge__points three'>43</div>
                 <p className='badge__type'>FIBRIC</p>
               </div>
               <div className='badge'>
-                <div className='badge__points four'>3</div>
+                <div className='badge__points four'>6</div>
                 <p className='badge__type'>METAL</p>
               </div>
               <div className='badge'>
-                <div className='badge__points five'>3</div>
+                <div className='badge__points five'>18</div>
                 <p className='badge__type'>GLASS</p>
               </div>
               <div className='badge'>
-                <div className='badge__points six'>3</div>
+                <div className='badge__points six'>23</div>
                 <p className='badge__type'>COMPOST</p>
               </div>
               <div className='badge'>
-                <div className='badge__points seven'>3</div>
+                <div className='badge__points seven'>11</div>
                 <p className='badge__type'>AHP</p>
               </div>
               <div className='badge'>
-                <div className='badge__points eight'>3</div>
+                <div className='badge__points eight'>5</div>
                 <p className='badge__type'>BATTERY</p>
               </div>
             </div>
