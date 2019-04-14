@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header";
+import Splash from "./components/Splash/Splash";
 
 import Me from "./components/Me/Me";
 import Notifications from "./components/Notifications/Notifications";
@@ -22,6 +23,7 @@ class App extends Component {
     return (
       <Router>
         <div className="app">
+          <Route exact path="/welcome" component={Splash}/>
           <Route exact path="/" component={Searchbar} />
           <Route exact path="/" component={Options} />
 
