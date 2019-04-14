@@ -1,0 +1,14 @@
+form {
+  margin: 0 auto;
+  width: 100%;
+}
+input {
+  width: 96%;
+  background-image: url("https://findicons.com/files/icons/557/creme/128/find.png");
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  text-indent: 22px;
+  background-color: #cdcdcd;
+  border: none;
+  border-radius: 50px;
+}
