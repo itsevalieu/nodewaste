@@ -197,21 +197,13 @@ class MyGoogleMap extends Component {
 
     return (
       <div className="MyGoogleMap">
-        <div style={{height:`5vh`}}>
-          <input
-            type='text'
-            placeholder='Search locations'
-            value={query}
-            onChange={(event) => this.updateQuery(event.target.value)}
-          />
-        </div>
         <Map
           onToggle={this.onToggleOpen}
           googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJMqSSgQ9npfcAZ9hmcOJynEbB6h1BOEc&v=3.exp&libraries=geometry,drawing,places"
           loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={<div style={{ height: `80vh` }} />}
+          containerElement={<div style={{ height: `95vh` }} />}
           mapElement={<div style={{ height: `100%` }} />}
-          className="Map"
+          className="googlemap"
           markers={locations}
         />
       </div>
