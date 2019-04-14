@@ -8,7 +8,6 @@ const cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var mapsRouter = require('./routes/maps');
 
 var app = express();
 
@@ -33,7 +32,6 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 // start map routes here.
-app.use('/maps', mapsRouter);
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname + '/client/build/index.html'));
 });
