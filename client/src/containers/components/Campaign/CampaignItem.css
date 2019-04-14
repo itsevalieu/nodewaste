@@ -19,6 +19,10 @@
 .campaign__body {
     grid-area: body;
 }
+.campaign__body a {
+    text-decoration: none;
+    color: #333;
+}
 .campaign__body h3 {
     font-size: 1.6em;
 }
@@ -46,4 +50,7 @@
     width: 25px;
     background: #ccc;
     border-radius: 5px;
+}
+.seven {
+    background: rgb(130, 240, 152);
 }

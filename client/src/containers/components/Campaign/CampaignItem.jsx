@@ -10,18 +10,19 @@ class CampaignItem extends Component {
             <div className='campaign__item'>
                 <div className='campaign__info'>
                     <div className='campaign__body'>
-                        <h3>{this.props.location.name}</h3>
+                        <a href={this.props.location.link}><h3>{this.props.location.name}</h3></a>
+                        <p>{this.props.location.type}</p>
                         <p>{this.props.location.address}</p>
                     </div>
                     <div className='campaign__dist'><p>{this.props.location.dist}</p></div>
                 </div>
                 <div className='campaign__tracker'>
                     <ul className='tracker'>
-                        <li className='tracker__cube'></li>
-                        <li className='tracker__cube'></li>
-                        <li className='tracker__cube'></li>
-                        <li className='tracker__cube'></li>
-                        <li className='tracker__cube'></li>
+                        <li className='tracker__cube seven'></li>
+                        <li className='tracker__cube seven'></li>
+                        <li className='tracker__cube seven'></li>
+                        <li className='tracker__cube seven'></li>
+                        <li className='tracker__cube seven'></li>
                         <li className='tracker__cube'></li>
                         <li className='tracker__cube'></li>
                         <li className='tracker__cube'></li>

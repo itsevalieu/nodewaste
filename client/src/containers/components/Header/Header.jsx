@@ -45,7 +45,7 @@ class Header extends Component {
           <nav className='navigation' id='navigation'>
             <ul className='navigation__list'>
               <li className='navigation__item'><a href='/' className='navigation__link'><HomeGrey/></a></li>
-              <li className='navigation__item'><a href='/notifications' className='navigation__link'><NotificationGrey /></a></li>
+              <li className='navigation__item'><a href='/campaign' className='navigation__link'><NotificationGrey /></a></li>
               <li className='navigation__item'><a href='/profile' className='navigation__link'><ProfileGrey /></a></li>
               <li className='navigation__item'><a href='/education' className='navigation__link'><EducationGrey /></a></li>
               <li className='navigation__item'><a href='/settings' className='navigation__link'><SettingGrey /></a></li>
