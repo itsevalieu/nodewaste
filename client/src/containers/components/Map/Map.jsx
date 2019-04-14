@@ -31,11 +31,11 @@ class Map extends Component {
         <Marker
           key={index}
           position={marker.location}
+          icon='http://maps.gstatic.com/mapfiles/markers2/boost-marker-mapview.png'
           onClick={() => this.props.onToggle(marker)}
          >{marker.isOpen && <InfoWindow onCloseClick={()=>this.props.onToggle(marker)}>
             <div className='infowindow'>
               <CampaignItem location={marker}/>
-              <a href={marker.link}><button>Take Me There</button></a>
             </div>
             </InfoWindow>}
        </Marker>

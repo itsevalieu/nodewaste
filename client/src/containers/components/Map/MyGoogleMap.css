@@ -5,13 +5,13 @@
     scroll-snap-align: center; */
     /* overflow: hidden; */
 }
-.gm-style {
+/* .gm-style {
     border: 1px solid blue;
     position: relative;
     left: 0px;
     top: 100px;
     height: 250px;
-}
-.gm-style:after {
+} */
+/* .gm-style:after {
     content: none;
-}
+} */
