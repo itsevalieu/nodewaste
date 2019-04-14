@@ -12,10 +12,7 @@ import Campaign from "./components/Campaign/Campaign";
 
 import CampaignInfo from "./components/Campaign/CampaignInfo";
 import CameraCustom from "./components/Camera/camera";
-import Options from "./components/Home/Options";
-import Searchbar from "./components/Home/SearchBar";
-
-import CampaignButton from './components/Home/CampaignButton';
+import Home from "./components/Home/Options";
 
 
 
@@ -25,8 +22,7 @@ class App extends Component {
       <Router>
         <div className="app">
           <Route exact path="/welcome" component={Splash}/>
-          <Route exact path="/" component={Searchbar} />
-          <Route exact path="/" component={Options} />
+          <Route exact path="/" component={Home} />
 
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/notifications" component={Notifications} />
