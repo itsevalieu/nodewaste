@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {  GoogleMap, Marker, withGoogleMap, withScriptjs, InfoWindow } from 'react-google-maps';
 import './Map.css';
 import CampaignItem from '../Campaign/CampaignItem';
+import Search from './components/Search';
 
 class Map extends Component {
   state = {
@@ -40,6 +41,7 @@ class Map extends Component {
             </InfoWindow>}
        </Marker>
       ))}
+      <Search/>
       <Marker
         icon="https://www.robotwoods.com/dev/misc/bluecircle.png"
         position={this.state.currentPosition}
