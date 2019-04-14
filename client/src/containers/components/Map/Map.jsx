@@ -37,6 +37,7 @@ class Map extends Component {
          >{marker.isOpen && <InfoWindow onCloseClick={()=>this.props.onToggle(marker)}>
             <div className='infowindow'>
               <CampaignItem location={marker}/>
+              <a className='example' href='/example'>Details</a>
             </div>
             </InfoWindow>}
        </Marker>

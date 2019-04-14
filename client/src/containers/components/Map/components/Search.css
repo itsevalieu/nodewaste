@@ -3,7 +3,7 @@
 }
 .searchicon {
     position: absolute;
-    top: 61px;
+    top: 42px;
     left: 30px;
     height: 100px;
     width: 100px;
@@ -19,7 +19,7 @@
     box-shadow: 5px 5px 10px #ccc;
     border-radius: 50px;
     padding: 15px;
-    top: 50px;
+    top: 30px;
     margin: 0 1.5em;
     text-indent: 30px;
 }

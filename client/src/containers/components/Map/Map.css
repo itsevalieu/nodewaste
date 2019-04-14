@@ -1,4 +1,8 @@
-/* .infowindow {
-    position: absolute;
-    padding: 1em;
-} */
+.example {
+    font-size: 1.6em;
+    text-decoration: none;
+    color: green;
+    text-align: right;
+    padding: 0 10px;
+    line-height: 1.6em;
+}
