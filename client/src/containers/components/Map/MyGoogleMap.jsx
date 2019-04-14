@@ -5,6 +5,7 @@ class MyGoogleMap extends Component {
   state ={
     locations:[{
       name: 'MyFirstPlace Daycare',
+      address: '1931 22nd St, Santa Monica, CA 90404',
       location: {
         lat: 34.0229,
         lng: -118.4694,
@@ -13,6 +14,7 @@ class MyGoogleMap extends Component {
     },
     {
       name: 'Amalia DayCare',
+      address: '2503 20th St, Santa Monica, CA 90405',
       location: {
         lat: 34.0147,
         lng: -118.4650,
@@ -20,15 +22,8 @@ class MyGoogleMap extends Component {
       isOpen: false,
     },
     {
-      name: 'Bright Horizons at Ocean Park',
-      location: {
-        lat: 34.0206,
-        lng: -118.4492,
-      },
-      isOpen: false,
-    },
-    {
       name: 'Petit à Petit French Bilingual Daycare Santa Monica Day Care Garderie Crèche Francaise',
+      address: '1452 Harvard St, Santa Monica, CA 90404',
       location: {
         lat: 34.0334,
         lng: -118.4715,
@@ -36,15 +31,8 @@ class MyGoogleMap extends Component {
       isOpen: false,
     },
     {
-     name: 'Cuddle Bear Day Care',
-     location: {
-        lat: 34.0320,
-        lng: -118.4786,
-      },
-      isOpen: false,
-    },
-    {
      name: 'Sarian Family Child Care',
+     address: '1434 Franklin St B, Santa Monica, CA 90404',
      location: {
         lat: 34.0369,
         lng: -118.4680,
@@ -53,6 +41,7 @@ class MyGoogleMap extends Component {
     },
     {
      name: 'Stepping Stone Child Care and Preschool',
+     address: '2527 25th St, Santa Monica, CA 90405',
      location: {
         lat: 34.0183,
         lng: -118.4595,
@@ -60,15 +49,8 @@ class MyGoogleMap extends Component {
       isOpen: false,
     },
     {
-     name: "Bright Horizons Children's Center at The Watergarden",
-     location: {
-        lat: 34.0294,
-        lng: -118.4707,
-      },
-      isOpen: false,
-    },
-    {
      name: 'Bright Start Learning Center',
+     address: '1501 17th St, Santa Monica, CA 90404',
      location: {
         lat: 34.0252,
         lng: -118.4809,
@@ -77,6 +59,7 @@ class MyGoogleMap extends Component {
     },
     {
      name: 'Empress Family Child Daycare',
+     address: '1736 Franklin St # B, Santa Monica, CA 90404',
      location: {
         lat: 34.0330,
         lng: -118.4632,
@@ -85,6 +68,7 @@ class MyGoogleMap extends Component {
     },
     {
      name: 'Early Bird Learning Centers',
+     address: '1019 California Ave, Santa Monica, CA 90403',
      location: {
         lat: 34.0258,
         lng: -118.4939,
@@ -93,6 +77,7 @@ class MyGoogleMap extends Component {
     },
     {
      name: 'Ocean Park Child Care Center',
+     address: 'Santa Monica, CA 90405',
      location: {
         lat: 34.0050,
         lng: -118.4804,
@@ -101,71 +86,16 @@ class MyGoogleMap extends Component {
     },
     {
      name: 'Lighthouse Center for Infants',
+     address: '1424 Yale St, Santa Monica, CA 90404',
      location: {
         lat: 34.0347,
         lng: -118.4714,
       },
       isOpen: false,
-    },
-    {
-     name: 'John Adams Child Development Center',
-     location: {
-        lat: 34.0144,
-        lng: -118.4694,
-      },
-      isOpen: false,
-    },
-    {
-     name: 'Dreamland Infant Center',
-     location: {
-        lat: 34.0350,
-        lng: -118.4639,
-      },
-      isOpen: false,
-    },
-    {
-     name: 'Gilly Bean Pre School',
-     location: {
-        lat: 34.0127,
-        lng: -118.4647
-      },
-      isOpen: false,
-    },
-    {
-     name: 'Pine Street Child Development Center',
-     location: {
-        lat: 34.0075,
-        lng: -118.4778,
-      },
-      isOpen: false,
-    },
-    {
-     name: 'Lincoln Child Development Center',
-     location: {
-        lat: 34.0295,
-        lng: -118.4888,
-      },
-      isOpen: false,
-    },
-    {
-     name: 'Les enfants',
-     location: {
-        lat: 34.0256,
-        lng: -118.4636,
-      },
-      isOpen: false,
-    },
-    {
-     name: 'Montana Preschool',
-     location: {
-        lat: 34.0454,
-        lng: -118.4964,
-      },
-      isOpen: false,
     }],
-    query:''
-  }
+    query:'',
 
+  }
   onToggleOpen = (location) => {
     console.log('clicked');
     console.log(location);

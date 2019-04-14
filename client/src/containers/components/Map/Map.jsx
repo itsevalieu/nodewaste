@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {  GoogleMap, Marker, withGoogleMap, withScriptjs, InfoWindow } from 'react-google-maps'
+import {  GoogleMap, Marker, withGoogleMap, withScriptjs, InfoWindow } from 'react-google-maps';
+import './Map.css';
 
 class Map extends Component {
   state = {
@@ -20,7 +21,13 @@ class Map extends Component {
           key={index}
           position={marker.location}
           onClick={() => this.props.onToggle(marker)}
-         >{marker.isOpen && <InfoWindow onCloseClick={()=>this.props.onToggle(marker)}><div>{marker.name}</div></InfoWindow>}
+         >{marker.isOpen && <InfoWindow onCloseClick={()=>this.props.onToggle(marker)}>
+            <div className='infowindow'>
+              <p>{marker.name}</p>
+              <p>{marker.address}</p>
+              <a href='/'><button>Take Me There</button></a>
+            </div>
+            </InfoWindow>}
        </Marker>
       ))}
       <Marker

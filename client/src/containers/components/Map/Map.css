@@ -1,0 +1,5 @@
+.infowindow {
+    display: flex;
+    flex-direction: column;
+    
+}
