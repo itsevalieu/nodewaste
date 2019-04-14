@@ -103,7 +103,7 @@ class Profile extends Component {
               </div>
               <div className='badge'>
                 <div className='badge__points three'>43</div>
-                <p className='badge__type'>FIBRIC</p>
+                <p className='badge__type'>FABRIC</p>
               </div>
               <div className='badge'>
                 <div className='badge__points four'>6</div>

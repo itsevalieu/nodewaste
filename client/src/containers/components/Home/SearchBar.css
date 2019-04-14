@@ -1,14 +1,28 @@
-form {
-  margin: 0 auto;
-  width: 100%;
+.searchbar {
+  /* position: relative; */
 }
-input {
-  width: 96%;
-  background-image: url("https://findicons.com/files/icons/557/creme/128/find.png");
-  background-size: 1.5rem;
-  background-repeat: no-repeat;
-  text-indent: 22px;
-  background-color: #e8e8e8;
+.searchbaricon {
+  position: absolute;
+  top: 243px;
+  left: 30px;
+  /* height: 600px; */
+  width: 100px;
+  z-index: 3;
+}
+.searchbar input {
+  position: absolute;
+  z-index: 2;
+  background: white;
+  height: 50px;
+  width: 90%;
+  box-shadow: 5px 5px 10px #ccc;
+  border-radius: 50px;
+  padding: 15px;
+  top: 230px;
+  margin: 0 1.5em;
+  text-indent: 30px;
+}
+.searchbar input:focus {
+  outline: none;
   border: none;
-  border-radius: 5px;
 }
