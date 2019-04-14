@@ -10,6 +10,7 @@ class Campaign extends Component {
             locations: [{
                 name: 'MyFirstPlace Daycare',
                 address: '1931 22nd St, Santa Monica, CA 90404',
+                example: '/example',
                 link: 'https://www.google.com/maps/dir/34.023554,++-118.483395/1931+22nd+St,+Santa+Monica,+CA+90404/@34.0235016,-118.4808422,16z/data=!3m1!4b1!4m12!4m11!1m3!2m2!1d-118.483395!2d34.023554!1m5!1m1!1s0x80c2bb3b5dbe7ea5:0x62e1a12586a77d34!2m2!1d-118.4693566!2d34.0228668!3e0',
                 type: 'AHP Recycle',
                 dist: '1.1 miles',

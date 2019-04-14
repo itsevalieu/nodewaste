@@ -22,3 +22,7 @@
 .scan {
     background: #00bdff;
 }
+.direction:focus, .scan:focus {
+    outline: none;
+    border: none;
+}
