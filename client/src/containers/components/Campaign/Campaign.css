@@ -9,4 +9,5 @@
     scroll-snap-type: y mandatory;
     scroll-padding: 100px;
     scroll-snap-align: center;
+    padding-bottom: 100px;
 }

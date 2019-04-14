@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './Me.css';
+import './Profile.css';
 import Header from '../Header/Header';
 import avatar from './kevin.png';
 
-class Me extends Component {
+class Profile extends Component {
   render() {
     return (
         <div className='profile'>
@@ -133,4 +133,4 @@ class Me extends Component {
   }
 }
 
-export default Me;
+export default Profile;

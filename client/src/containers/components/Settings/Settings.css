@@ -24,3 +24,6 @@
     font-weight: 600;
     background: rgb(130, 240, 152);
 }
+.donebutton:focus {
+    outline: none;
+}

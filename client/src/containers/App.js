@@ -4,7 +4,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Splash from "./components/Splash/Splash";
 
-import Me from "./components/Me/Me";
+import Profile from "./components/Profile/Profile";
 import Notifications from "./components/Notifications/Notifications";
 import Education from "./components/Education/Education";
 import Settings from "./components/Settings/Settings";
@@ -28,7 +28,7 @@ class App extends Component {
           <Route exact path="/" component={Searchbar} />
           <Route exact path="/" component={Options} />
 
-          <Route exact path="/profile" component={Me} />
+          <Route exact path="/profile" component={Profile} />
           <Route exact path="/notifications" component={Notifications} />
           <Route exact path="/education" component={Education} />
           <Route exact path="/settings" component={Settings} />

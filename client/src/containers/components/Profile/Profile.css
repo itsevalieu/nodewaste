@@ -153,3 +153,14 @@
 .badge__type {
     text-align: center;
 }
+/** MEDIA QUERIES **/
+@media (min-width: 769px) {
+    .ptracker__cube {
+        height: 25px;
+        width: 8em;
+        border-radius: 5px;
+    }
+    .profile__campaign-body {
+        text-align: center;
+    }
+}

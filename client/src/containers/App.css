@@ -1,14 +1,3 @@
 .app {
     max-height: 100%;
 }
-
-/** MEDIA QUERIES **/
-@media (max-width: 768px) {
-
-  
-}
-
-/** MOBILE STYLES **/
-@media only screen and (max-device-width: 768px) {
-  
-}
