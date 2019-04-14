@@ -27,7 +27,7 @@ class Header extends Component {
             <img src={ hamburger } alt='menu' onClick={ this._openMenu }/>
           </div>
           <span className='logo'>
-            <a href='/'>Zero Waste Net</a>
+            <a href='/'>NODEWASTE</a>
           </span>
           <div className='option'>
             <img src={ option } alt='option' />

@@ -9,6 +9,9 @@ header {
     align-items: center;
     white-space: nowrap;
     box-shadow: 1px 1px 1px #ccc;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 .logo {
     margin: 0 1em;

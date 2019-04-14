@@ -113,7 +113,6 @@ class MyGoogleMap extends Component {
       },
       isOpen: false,
     }],
-    query:'',
 
   }
   onToggleOpen = (location) => {
