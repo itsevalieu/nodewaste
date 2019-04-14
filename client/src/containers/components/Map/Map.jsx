@@ -25,7 +25,8 @@ class Map extends Component {
             <div className='infowindow'>
               <p>{marker.name}</p>
               <p>{marker.address}</p>
-              <a href='/'><button>Take Me There</button></a>
+              <p>{marker.dist}</p>
+              <a href={marker.link}><button>Take Me There</button></a>
             </div>
             </InfoWindow>}
        </Marker>
