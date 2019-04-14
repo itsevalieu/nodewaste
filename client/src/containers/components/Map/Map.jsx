@@ -1,42 +1,25 @@
-import React, {Component} from 'react';
-import MapGL, {NavigationControl, Marker} from 'react-map-gl';
-import './Map.css';
+import React, { Component } from 'react';
+import {  GoogleMap, Marker, withGoogleMap, withScriptjs, InfoWindow } from 'react-google-maps'
 
-const TOKEN = 'pk.eyJ1Ijoic3VnYXJzeW50YXgiLCJhIjoiY2p1ZjI2M2pyMDlyMDQ0cGJ3YmZjNXJ6OCJ9.muQlysMHeqeaMY0h237YJg';
-
-const navStyle = {
-  position: 'absolute',
-  top: 0,
-  left: 0,
-  padding: '10px'
-};
-export default class Map extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      viewport: {
-        latitude: 34.020130, 
-        longitude: -118.484962,
-        zoom: 11,
-        bearing: 0,
-        pitch: 0,
-        width: 500,
-        height: 500,
-      }
-    };
-  }
+class Map extends Component {
   render() {
-    const {viewport} = this.state;
-    return (
-      <MapGL
-        {...viewport}
-        mapStyle="mapbox://styles/mapbox/streets-v11"
-        mapboxApiAccessToken={TOKEN}>
-        <div className="nav" style={navStyle}>
-          <NavigationControl/>
-          <Marker latitude={34.0229} longitude={-118.4694} offsetLeft={-20} offsetTop={-10}></Marker>
-        </div>
-      </MapGL>
-    );
+    return(
+    <div>
+      <GoogleMap
+        defaultZoom={13}
+        defaultCenter={{ lat: 34.020130, lng: -118.484962 }}
+      >{this.props.markers.map((marker, index) =>(
+        <Marker
+          key={index}
+          position={marker.location}
+          onClick={() => this.props.onToggle(marker)}
+         >{marker.isOpen && <InfoWindow onCloseClick={()=>this.props.onToggle(marker)}><div>Hello</div></InfoWindow>}
+       </Marker>
+      ))}
+      </GoogleMap>
+    </div>
+    )
   }
 }
+
+export default withScriptjs(withGoogleMap(Map))
