@@ -1,0 +1,47 @@
+.campaign__item {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "info"
+        "tracker";
+}
+.campaign__info {
+    grid-area: info;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+        "body dist";
+}
+.campaign__body {
+    grid-area: body;
+}
+.campaign__body h3 {
+    font-size: 1.6em;
+}
+.campaign__info p {
+    font-size: 1.2em;
+}
+.campaign__dist {
+    grid-area: dist;
+    text-align: right;
+}
+.campaign__tracker {
+    grid-area: tracker;
+}
+
+.tracker {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    justify-content: space-evenly;
+}
+.tracker__cube {
+    height: 25px;
+    width: 25px;
+    background: #ccc;
+    border-radius: 5px;
+}

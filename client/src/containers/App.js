@@ -7,14 +7,14 @@ import Me from "./components/Me/Me";
 import Notifications from "./components/Notifications/Notifications";
 import Education from "./components/Education/Education";
 import Settings from "./components/Settings/Settings";
+import Campaign from "./components/Campaign/Campaign";
 
 import CameraCustom from "./components/Camera/camera";
 import Options from "./components/Home/Options";
 import Searchbar from "./components/Home/SearchBar";
-import CampaignList from "./components/CampaignList/CampaignList";
+
 import CampaignButton from './components/Home/CampaignButton';
 
-import Map from "./components/Map/Map";
 
 
 class App extends Component {
@@ -29,8 +29,8 @@ class App extends Component {
           <Route exact path="/notifications" component={Notifications} />
           <Route exact path="/education" component={Education} />
           <Route exact path="/settings" component={Settings} />
+          <Route exact path="/campaign" component={Campaign} />
 
-          <Route exact path="/campaign" component={CampaignList} />
           <Route exact path="/camera-custom" component={CameraCustom} />
           <Header />
         </div>
