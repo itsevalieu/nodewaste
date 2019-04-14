@@ -17,6 +17,8 @@ header {
 .navlinks {
     font-size: 0.8em;
     display: block;
+    position: absolute;
+    z-index: 5;
 }
 ul {
     display: flex;
