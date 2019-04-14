@@ -169,6 +169,10 @@ class MyGoogleMap extends Component {
   onToggleOpen = (location) => {
     console.log('clicked');
     console.log(location);
+    this.state.locations.forEach((notLocation) => {
+      notLocation.isOpen = false;
+      this.setState(notLocation);
+    });
     location.isOpen = !location.isOpen;
     this.setState(location);
     console.log(this);

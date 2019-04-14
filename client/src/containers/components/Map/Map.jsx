@@ -13,7 +13,7 @@ class Map extends Component {
           key={index}
           position={marker.location}
           onClick={() => this.props.onToggle(marker)}
-         >{marker.isOpen && <InfoWindow onCloseClick={()=>this.props.onToggle(marker)}><div>Hello</div></InfoWindow>}
+         >{marker.isOpen && <InfoWindow onCloseClick={()=>this.props.onToggle(marker)}><div>{marker.name}</div></InfoWindow>}
        </Marker>
       ))}
       </GoogleMap>
