@@ -1,6 +1,6 @@
 header {
-    background: #ccc;
-    color: #555;
+    background: #fff;
+    color: #222;
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -10,6 +10,7 @@ header {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 5;
 }
 .logo {
     margin: 0 1em;
@@ -17,8 +18,6 @@ header {
 }
 .navigation {
     display: block;
-    position: absolute;
-    z-index: 5;
     width: 100%;
 }
 .navigation__list {
@@ -35,7 +34,7 @@ header {
     text-align: center;
 }
 .navigation__link {
-    color: #555;
+    color: #222;
     text-decoration: none;
     font-size: 1.4em;
     display: flex;

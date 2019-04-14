@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Map from './Map.jsx'
+import './MyGoogleMap.css';
 
 class MyGoogleMap extends Component {
   state ={
@@ -149,14 +150,13 @@ class MyGoogleMap extends Component {
     // filteredMarkers.sort(sortBy('name'))
 
     return (
-      <div className="MyGoogleMap">
+      <div className="map">
         <Map
           onToggle={this.onToggleOpen}
           googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJMqSSgQ9npfcAZ9hmcOJynEbB6h1BOEc&v=3.exp&libraries=geometry,drawing,places"
           loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={<div style={{ height: `50vh` }} />}
+          containerElement={<div style={{ height: `78.5vh` }} />}
           mapElement={<div style={{ height: `100%` }} />}
-          className="googlemap"
           markers={locations}
         />
       </div>
