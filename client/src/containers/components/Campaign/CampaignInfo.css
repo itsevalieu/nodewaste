@@ -17,6 +17,7 @@
 }
 .direction {
     background: rgb(130, 240, 152);
+    margin-bottom: 2em;
 }
 .scan {
     background: #00bdff;
