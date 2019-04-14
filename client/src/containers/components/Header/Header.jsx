@@ -15,9 +15,9 @@ class Header extends Component {
     e.preventDefault();
     this.setState(prevState => ({isOpen: !prevState.isOpen}));
 		if(this.state.isOpen === false) {
-			document.getElementById('nav').style.display = 'none';
+			document.getElementById('navigation').style.display = 'none';
 		} else {
-			document.getElementById('nav').style.display = 'block';			
+			document.getElementById('navigation').style.display = 'block';			
 		}
   }
   render() {
@@ -32,13 +32,13 @@ class Header extends Component {
           {/* <div className='option'>
             <img src={ option } alt='option' />
           </div> */}
-          <nav className='navlinks' id='nav'>
-            <ul>
-              <li><a href='/'><img src='' alt='home'/>Home</a></li>
-              <li><a href='/notifications'><img src='' alt='notifications'/>Notifications</a></li>
-              <li><a href='/me'><img src='' alt='me'/>Me</a></li>
-              <li><a href='/education'><img src='' alt='education'/>Education</a></li>
-              <li><a href='/settings'><img src='' alt='settings'/>Settings</a></li>
+          <nav className='navigation' id='navigation'>
+            <ul className='navigation__list'>
+              <li className='navigation__item'><a href='/' className='navigation__link'><img src='' alt='home' className='navigation__icon'/>Home</a></li>
+              <li className='navigation__item'><a href='/notifications' className='navigation__link'><img src='' alt='notifications' className='navigation__icon'/>Notifications</a></li>
+              <li className='navigation__item'><a href='/me' className='navigation__link'><img src='' alt='me' className='navigation__icon'/>Me</a></li>
+              <li className='navigation__item'><a href='/education' className='navigation__link'><img src='' alt='education' className='navigation__icon'/>Education</a></li>
+              <li className='navigation__item'><a href='/settings' className='navigation__link'><img src='' alt='settings' className='navigation__icon'/>Settings</a></li>
             </ul>
           </nav>
         </header>
