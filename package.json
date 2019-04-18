@@ -2,6 +2,7 @@
   "name": "ZeroWasteNet",
   "version": "0.0.0",
   "private": true,
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "start-react": "cd client && npm start",
@@ -17,5 +18,9 @@
     "morgan": "~1.9.0",
     "node-sass-middleware": "0.11.0",
     "truffle-contract": "^4.0.11"
+  },
+  "engines": {
+    "node": "v10.15.3",
+    "npm": "6.4.1"
   }
 }
